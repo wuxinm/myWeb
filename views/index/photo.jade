@@ -1,0 +1,12 @@
+section.row.photos.anchor#photos
+	.section-header.col-xs-12
+		h1= info.photo.title
+		h2= info.photo.subtitle
+		h3.icon-header.col-xs-8.col-xs-offset-2
+			span.glyphicon.glyphicon-picture#header-img
+	each photo in result.photos
+		.pic.col-md-2.col-xs-6
+			img(src="#{photo.path}")
+			.mask
+				h3 #{photo.title}
+				p #{photo.comment}

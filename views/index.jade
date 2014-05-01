@@ -1,0 +1,45 @@
+extends layout
+
+block content
+	.container-fluid
+		.site-header.row
+			.carousel.slide#slider(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#slider', data-slide-to='0')
+					li(data-target='#slider', data-slide-to='1')
+					li(data-target='#slider', data-slide-to='2')
+
+				<!-- Wrapper for slides -->
+				.carousel-inner
+					.item.active
+						img(src='images/slider_1.jpg' alt='slider_1')
+						.carousel-caption
+							h3 PASSION
+							p Through different perspectives to look at the world and you will find a better
+					.item
+						img(src='images/slider_2.jpg' alt='slider_2')
+						.carousel-caption
+							h3 CONCENTRATION
+							p Eternity is not a distance but a decision.
+					.item
+						img(src='images/slider_3.jpg' alt='slider_3')
+						.carousel-caption
+							h3 FUTURE
+							p If you weeped for the missing sunset,you would miss all the shining stars
+
+				<!-- Controls -->
+				a.left.carousel-control(href='#slider', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left
+				a.right.carousel-control(href='#slider', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right
+			.slider-title.col-xs-12
+				h1.slider-h1-hide#slider-h1 YOUMENG LI
+				h2.slider-h2-hide#slider-h2 A master student of Computer Science
+				h3.slider-h3-hide#slider-h3 Welcome to my page
+	.container-fluid
+		include index/about_me
+		include index/skills
+		include index/blog
+		include index/photo
+		include index/demo
+		include index/footer

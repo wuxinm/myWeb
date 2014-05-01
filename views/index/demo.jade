@@ -1,0 +1,15 @@
+section.row.demo.anchor#demos
+	.section-header.col-xs-12
+		h1= info.demo.title
+		h2= info.demo.subtitle
+		h3.icon-header.col-xs-8.col-xs-offset-2
+			span.glyphicon.glyphicon-edit#header-img
+	- each demo in result.demos
+		.col-md-6.col-xs-12#demo-block(data-stellar-background-ratio="0.5" style="background-image:url(#{demo.background_img})")
+			.mask.col-xs-12
+				.content.col-xs-12
+					h1 #{demo.title}
+					p #{demo.intro}
+					button.btn.btn-warning(type="button")= info.demo.view
+					button.btn.btn-warning(type="button")= info.demo.sc
+					button.btn.btn-warning(type="button")= info.demo.download

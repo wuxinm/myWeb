@@ -1,0 +1,69 @@
+{
+	"title": "wuxinm's website",
+	"brand_nav": "WUXINM",
+	"home_nav": "ABOUTME",
+	"skills_nav": "SKILLS",
+	"blog_nav": "BOLG",
+	"photos_nav": "PHOTOS",
+	"demo_nav": "DEMOS",
+	"cn_nav": "中文",
+	"header_h2": "Focusing on Front-end Technology and Web Applications",
+	"header_h3": "Walking between visual design and web development technology",
+	
+	"about_me": {
+		"title": "About Me",
+		"subtitle": "Self-Description",
+		"edu": "EDUCATION",
+		"name_label": "FULL NAME",
+		"name": "Youmeng Li",
+		"birthday_label": "BIRTHDAY",
+		"birthday": "1989.12.03",
+		"hobbies_label": "HOBBIES",
+		"hobbies": "Electronic Devices, Sports, Movie, Game",
+		"nationality_label": "NATIONALITY",
+		"nationality": "China",
+		"location_label": "LOCATION",
+		"location": "Thunder Bay, ON, CA"
+	},
+
+	"skills": {
+		"title": "My Skills",
+		"subtitle": "programming and design",
+		"intro": "I am interested in web development and design, including front-end technology, client-server application and game. Mobile programing is another my favorite part of programing.",
+		"progress_1": "UX design",
+		"progress_2": "HTML / CSS",
+		"progress_3": "JS / jQuery",
+		"progress_4": "NodeJS",
+		"progress_5": "C / C++",
+		"progress_6": "ActionScript",
+		"progress_7": "JAVA",
+		"progress_8": "Python"
+	},
+
+	"blogs": {
+		"title": "My blog",
+		"subtitle": "Latest one",
+		"footer": "More blogs ..."
+	},
+
+	"photo": {
+		"title": "PhotoGallery",
+		"subtitle": "Happiness everyday"
+	},
+
+	"demo": {
+		"title": "DemoGallery",
+		"subtitle": "My code life",
+		"view": "View Demo",
+		"sc": "View screen_shoots",
+		"download": "Download code"
+	},
+
+	"footer": {
+		"note": "Note",
+		"note_content": "This site is based on Express and Bootstrap framework, thanks to all the open source framework developers",
+		"position": "Position",
+		"sns": "SNS",
+		"contacts": "Contacts"
+	}
+}

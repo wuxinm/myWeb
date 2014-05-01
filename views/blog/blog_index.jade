@@ -1,0 +1,37 @@
+extends blog_layout
+
+block content
+	- var blog_array = [];
+	while (blog_array > 0)
+		- blog_array.pop()
+	each blog in result.blogs
+		- blog_array.push(blog)
+		- blog_array.reverse()
+
+	.container-fluid
+		.section-header.col-xs-12
+			h1= info.blogs.title
+			h2= info.blogs.subtitle
+			h3.icon-header.col-xs-8.col-xs-offset-2
+				span.glyphicon.glyphicon-th-list
+		a.btn.btn-default.col-xs-offset-1(type='button' href='/blog/new') Add new blog
+			span.glyphicon.glyphicon-plus 
+		.content.col-xs-10.col-xs-offset-1
+			each blog in blog_array
+				.block
+					h2.col-xs-12 #{blog.title}
+						.button-group
+							form(method='get', action='/blog/#{blog._id}/edit' role='form')
+								button.btn.btn-default(submit='submit', name='edit', id='inputTitle') Edit
+									span.glyphicon.glyphicon-edit
+							form(method='post', action='/blog/#{blog._id}/delete' role='form')
+								button.btn.btn-default(submit='submit', name='delete', id='inputTitle') Delete
+									span.glyphicon.glyphicon-trash
+					p#blog-body #{blog.body}
+					.blogs_footer
+						.time
+							span.glyphicon.glyphicon-time
+							h5 #{blog.date}
+						.tag
+							span.glyphicon.glyphicon-tag
+							h5 #{blog.tag}

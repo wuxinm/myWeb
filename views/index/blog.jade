@@ -1,0 +1,25 @@
+- var blog_array = []
+each blog in result.blogs
+	- blog_array.push(blog)
+- var blog = blog_array[blog_array.length - 1]
+
+section.row.blogs.anchor#blogs
+	.section-header.col-xs-12
+		h1= info.blogs.title
+		h2= info.blogs.subtitle
+		h3.icon-header.col-xs-8.col-xs-offset-2
+			span.glyphicon.glyphicon-th-list
+	.content.col-xs-8.col-xs-offset-2
+		if (blog != null)
+			h2 #{blog.title}
+			p #{blog.body}
+			.blogs_footer
+				.time
+					span.glyphicon.glyphicon-time
+					h5 #{blog.date}
+				.tag
+					span.glyphicon.glyphicon-tag
+					h5 #{blog.tag}
+				h5 
+					a(href='/blog')= info.blogs.footer
+						span.glyphicon.glyphicon-share-alt

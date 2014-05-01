@@ -1,0 +1,38 @@
+extends blog_layout
+
+block content
+	- var action = '/blog'
+	- action += blog.isNew? '' : '/' + blog.id
+
+	.container-fluid
+		.section-header.col-xs-12
+			h1= title
+			h2= subtitle
+			h3.icon-header.col-xs-8.col-xs-offset-2
+				span.glyphicon.glyphicon-th-list
+		a.btn.btn-default.col-xs-offset-1(type='button', href='/blog') Back to blogs
+			span.glyphicon.glyphicon-share-alt 
+		.content.col-xs-12
+			form.form-horizontal(method='POST', action=action role='form')
+
+				.form-group
+					label.col-sm-2.col-xs-12.control-label(for='inputTitle') Title
+					.col-sm-8.col-xs-12
+						input.form-control(type='text', name='title', id='inputTitle',value=blog.title placeholder='Title')
+				.form-group
+					label.col-sm-2.col-xs-12.control-label(for='inputBody') Body
+					.col-sm-8.col-xs-12
+						textarea.form-control(rows='5', name='body', placeholder='Enter the article description')= blog.body
+				.form-group
+					label.col-sm-2.col-xs-12.control-label(for='inputTag') Tag
+					.col-sm-2.col-xs-12
+						select.form-control(name='tag')
+							- items = ['IT', 'Diary', 'Game', 'Movie / Music', 'Sports']
+							each item in items
+								if item === blog.tag
+									option(selected='selected') #{item}
+								else
+									option #{item}
+				.form-group
+					.col-xs-8.col-xs-offset-2
+						button.btn.btn-primary(type='submit') Save

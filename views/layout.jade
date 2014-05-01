@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+		meta(charset='uft-8')
+		title= title
+	
+		//Mobile Specific Meta
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+		//Stylesheets
+		link(rel='stylesheet', href='stylesheets/style.css')
+		link(rel='stylesheet', href='stylesheets/bootstrapCSS/bootstrap.min.css')
+
+		//JS
+		script(src='javascripts/jquery-1.11.0.min.js')
+		script(src='javascripts/bootstrapJS/bootstrap.min.js')
+		script(src='javascripts/jquery.gmap.min.js')
+		script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+		script(src='javascripts/jquery.stellar.js')
+		script(src='javascripts/index.js')
+	body(data-spy='scroll', data-tartget='#main-nav', data-offset='50')
+		//NAVBAR
+		nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#main-nav')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.active(href='/')= info.brand_nav
+
+			.collapse.navbar-collapse#main-nav
+				ul.nav.navbar-nav(role='navigation')
+					li.active: a.scroll-link(href='#about_me', data-id='about_me')= info.home_nav
+					li: a.scroll-link(href='#skills', data-id='skills')= info.skills_nav
+					li: a.scroll-link(href='#blogs', data-id='blogs')= info.blog_nav
+					li: a.scroll-link(href='#photos', data-id='photos')= info.photos_nav
+					li: a.scroll-link(href='#demos', data-id='demos')= info.demo_nav
+					li(data-toggle='tooltip', data-placement='bottom', title='抱歉,暂不支持中文 ...'): a(href='#')= info.cn_nav
+		block content

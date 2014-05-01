@@ -1,0 +1,37 @@
+section.row.about_me.anchor#about_me
+	.section-header.col-xs-12
+		h1= info.about_me.title
+		h2= info.about_me.subtitle
+		h3.icon-header.col-xs-8.col-xs-offset-2
+			span.glyphicon.glyphicon-user
+	.content.col-xs-12
+		aside.col-md-4.col-xs-12.myInfo
+			.info-block
+				h5= info.about_me.name_label
+				h4= info.about_me.name
+			.info-block
+				h5= info.about_me.birthday_label
+				h4= info.about_me.birthday
+			.info-block
+				h5= info.about_me.hobbies_label
+				h4= info.about_me.hobbies
+			.info-block
+				h5= info.about_me.nationality_label
+				h4= info.about_me.nationality
+			.info-block
+				h5= info.about_me.location_label
+				h4= info.about_me.location
+		article.col-md-4.col-xs-12.myPhoto
+			img.img-circle(src='images/myphoto_1.jpg' width='250px' height='250px')
+		aside.col-md-4.col-xs-12.education
+			h1= info.about_me.edu
+			.edu-info
+				span.label.label-primary 2013.1-present
+				h4 LakeHead University
+				h5 Master Degress
+				h5 Thunder Bay, ON, CA
+			.edu-info
+				span.label.label-primary 2008.9-2012.6
+				h4 Zhuhai College of JiLin University
+				h5 Bachelor Degress
+				h5 Zhuhai, Guangdong, CN
