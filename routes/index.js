@@ -12,8 +12,10 @@ var fs = require('fs'),
 /*
 	All collections of mongoDB
 */
-
-mongoose.connect('mongodb://localhost/myWebsite');
+var mongoUri = process.env.MONGOLAB_URI ||
+  	process.env.MONGOHQ_URL ||
+  	'mongodb://localhost/myWebsite';
+mongoose.connect(mongoUri);
 
 var BlogSchema = new Schema({
 		title: { type : String, default : '', trim : true },
