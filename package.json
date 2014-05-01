@@ -9,8 +9,9 @@
     "type": "git",
     "url": "https://github.com/wuxinm/myWeb.git"
   },
-  "keywords": {
-    "heroku"
+  "author": "wuxinm",
+  "engines": {
+    "node": "0.10.x"
   },
   "dependencies": {
     "express": "~4.0.0",
