@@ -5,6 +5,10 @@
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinm/myWeb.git"
+  },
   "dependencies": {
     "express": "~4.0.0",
     "static-favicon": "~1.0.0",
