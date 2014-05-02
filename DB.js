@@ -2,20 +2,6 @@ db.blogs.drop();
 db.photos.drop();
 db.demos.drop();
 
-db.blogs.insert({
-	"title": "How to create your first Express App",
-	body: "Open termianl console on your PC. Choose a "path" which you want to start your project. Then type "express helloExpress(ex.)", after this, you will find a folder called "helloExpress". The next step is installing all the dependencies. Jump into helloExpress folder and input "npm install". Finally, try "node app" to run your first Express App!",
-	tag: "IT",
-	date: new Date()
-});
-
-db.blogs.insert({
-	"title": "Test",
-	body: "This is blog test. /p Hope it works",
-	tag: "IT",
-	date: new Date()
-});
-
 db.photos.insert({
 	"title" : "Purple Flower",
 	"comment" : "A beautiful mood",
@@ -77,9 +63,9 @@ db.photos.insert({
 });
 
 db.photos.insert({
-	"title" : "Red Flower",
-	"comment" : "Where is my love??",
-	"path" : "/images/photos/11.jpg"
+	"title" : "Cottage",
+	"comment" : "Winter is coming",
+	"path" : "/images/photos/10.jpg"
 });
 
 db.photos.insert({
@@ -93,6 +79,7 @@ db.demos.insert({
 	"title" : "Canvas Mathcing Game",
 	"intro" : "A HTML5 web game base on KineticJS Canvas Framework. Game is very easy, try to find two cards with same pattern and get highest score.",
 	"background_img" : "/images/demos/demo_1/bg.png",
+	"path": "/view/html5game_1",
 	"screen_shoots": {
 		"ss_1": "/images/demos/demo_1/ss_1.png",
 		"ss_2": "/images/demos/demo_1/ss_2.png",
@@ -101,9 +88,10 @@ db.demos.insert({
 });
 
 db.demos.insert({
-	"title": "Action Script Game",
-	"intro": "A shooting Flash game with Action Script 3.0. Using direction keysto control cannon. Destroy the final boss after 2 mins you will save your plant.",
-	"background_img": "/images/demos/demo_2/bg.png",
+	"title": "WebGL 3D Puzzle Game",
+	"intro": "A HTML5 3D puzzle game based on three.js. Before you start this game, you need to put a video file which called 'video.mp4' in this folder",
+	"background_img": "/images/demos/demo_2/bg.jpg",
+	"path": "/view/html5game_2",
 	"screen_shoots": {
 		"ss_1": "/images/demos/demo_2/ss_1.png",
 		"ss_2": "/images/demos/demo_2/ss_2.png",

@@ -34,6 +34,7 @@ var DemoSchema = new Schema({
 		title: { type : String, default : '', trim : true },
 		intro: { type : String, default : '', trim : true },
 		background_img: { type : String, default : '', trim : true },
+		path: { type : String, default: '', trim : true },
 		screen_shoots: {
 			ss_1: { type : String, default : '', trim : true },
 			ss_2: { type : String, default : '', trim : true },

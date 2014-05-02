@@ -1,0 +1,61 @@
+!!! 5
+html(manifest='project2.appcache')
+	head
+    	style
+      	body{
+      		margin: 0px;
+      		padding: 0px;
+      		background-image:url("images/background.JPG");
+      		}
+      #container{
+      position:absolute;
+      width:1320px;
+      height:800px;
+      }
+      .start{
+      position:relative;
+      margin-left:500px;
+      margin-top:500px;
+      width:165px;
+      height:92px;
+      }
+      .started{
+      position:relative;
+      margin-left:500px;
+      margin-top:500px;
+      width:165px;
+      height:92px;
+      visible:false;
+      display:none;
+      }
+      #title1{
+      position:absolute;
+      margin-left:500px;
+      margin-top:300px;
+      }
+      #title2{
+      position:absolute;
+      margin-left:480px;
+      margin-top:370px;
+      }
+      .title{
+      font-size:30px;
+      font-family:Elephant;
+      color:#E59900;
+      }
+      .titleStart{
+      font-size:30px;
+      font-family:Elephant;
+      color:#E59900;
+      display:none;
+      }
+    script(src='js/jquery-1.9.1.js', type='text/javascript')
+  body
+    #body
+      #container
+      p#title1.title
+        | League of Legends
+        p#title2.title Cards Matching Game
+        img#startButton.start(src='images/startButton.png')
+    script(src='js/kinetic-4.3.3.js')
+    script(src='js/index.js')

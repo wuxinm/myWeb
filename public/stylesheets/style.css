@@ -14,12 +14,12 @@ body {
 
 .carousel {
 	font-family: 'Raleway', sans-serif;
+	overflow: visible;
 }
 
 .slider-title {
 	text-align: center;
 	position: relative;
-	display: block;
 	top: -600px;
 	color: #fff;
 }
@@ -58,6 +58,7 @@ body {
 
 .slider-h2-hide {
 	opacity: 0;
+	visibility: hidden;
 	-webkit-transition: all 1s ease ;
 	-o-transition: all 1s ease ;
 	transition: all 1s ease ;
@@ -65,6 +66,7 @@ body {
 
 .slider-h2-show {
 	opacity: 1;
+	visibility: visible;
 	-webkit-transition: all 1s ease ;
 	-o-transition: all 1s ease ;
 	transition: all 1s ease ;
@@ -91,6 +93,58 @@ body {
 	-webkit-transition: all 1s ease ;
 	-o-transition: all 1s ease ;
 	transition: all 1s ease ;
+}
+
+.slider-title a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	padding: 10px 20px; 
+	margin: 30px 20px 0 20px;
+}
+
+.slider-title a span {
+	margin-left: 15px;
+}
+
+.slider-a-hide {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 1s ease ;
+	-o-transition: all 1s ease ;
+	transition: all 1s ease ;
+}
+
+.slider-a-show {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: all 1s ease ;
+	-o-transition: all 1s ease ;
+	transition: all 1s ease ;
+}
+
+.slider-title #resume-button:hover {
+	background: transparent;
+	-webkit-transition: all 1s ease ;
+	-o-transition: all 1s ease ;
+	transition: all 1s ease ;
+}
+
+.slider-title #aboutme-button {
+	background: transparent;
+	color: #fff;
+}
+
+.slider-title #aboutme-button:hover {
+	background-color: #5cb85c;
+	-webkit-transition: all 1s ease ;
+	-o-transition: all 1s ease ;
+	transition: all 1s ease ;
+}
+
+#home-page {
+	margin-top: -350px !important;
+	/*position: relative;
+	top: -350px;*/
 }
 /* 
 	SECTION HEADER
@@ -145,7 +199,6 @@ body {
 	SECTION ABOUT_ME
  */
 .about_me {
-	margin-top: -300px;
 }
 
 .about_me .section-header span {
@@ -427,7 +480,7 @@ body {
 	padding-bottom: 30px;
 }
 
-#demo-block .content button {
+#demo-block .content a {
 	margin: 5px 10px 0 0;
 }
 
@@ -531,6 +584,10 @@ body {
 	.slider-title h3 {
 		font-size: 70px;
 	}
+	.slider-title a {
+		font-size: 18px;
+		margin: 20px 20px 0 20px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -546,8 +603,12 @@ body {
 	.slider-title h3 {
 		font-size: 60px;
 	}
-	.about_me {
-		margin-top: -280px;
+	.slider-title a {
+		font-size: 16px;
+		margin: 10px 20px 0 20px;
+	}
+	#home-page {
+		margin-top: -300px;
 	}
 }
 
@@ -556,40 +617,50 @@ body {
 		top: -380px;
 	}
 	.slider-title h1 {
-		font-size: 75px;
+		font-size: 65px;
 	}
 	.slider-title h2 {
 		font-size: 15px;
 	}
 	.slider-title h3 {
-		font-size: 55px;
+		font-size: 45px;
 	}
 	.about_me {
 		margin-top: -260px;
+	}
+	.slider-title a {
+		font-size: 10px;
+		margin: 5px 20px 0 20px;
+	}
+	#home-page {
+		margin-top: -20px;
 	}
 }
 
 @media only screen and (max-width: 780px) {
 	.slider-title {
-		top: -320px;
+		top: -360px;
 	}
 	.slider-title h1 {
-		font-size: 65px;
+		font-size: 60px;
 	}
 	.slider-title h2 {
 		font-size: 14px;
 	}
 	.slider-title h3 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.about_me {
 		margin-top: -250px;
+	}
+	.slider-title a {
+		visibility: hidden;
 	}
 }
 
 @media only screen and (max-width: 680px) {
 	.slider-title {
-		top: -270px;
+		top: -300px;
 	}
 	.slider-title h1 {
 		font-size: 55px;
@@ -605,6 +676,9 @@ body {
 	}
 	.carousel-caption {
 		display: none;
+	}
+	.slider-title a {
+		visibility: hidden;
 	}
 }
 

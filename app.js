@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var view = require('./routes/view');
 var blog = require('./routes/blog');
 
 var app = express();
@@ -24,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/blog', blog);
+app.use('/view', view);
+app.use(express.static(__dirname, '/public/documents/html5game_1'));
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

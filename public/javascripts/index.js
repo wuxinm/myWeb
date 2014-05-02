@@ -1,7 +1,7 @@
 var myPhoto_count = 1;
 var slider_count
 
-$(document).ready(function() {
+$(window).load(function() {
 
 	$('body').scrollspy({
 		target: '.navbar'
@@ -9,14 +9,19 @@ $(document).ready(function() {
 
 	// navigation click actions
 	$('.scroll-link').on('click', function(event) {
-		// event.preventDefault();
 		var sectionID = $(this).attr('data-id');
 		scrollToID('#' + sectionID, 700);
-		$(this).parent.addClass('active');
 	});
 
 	// slider
 	$('.carousel').carousel()
+
+	// slider title
+	slide_show();
+	$('#aboutme-button').on('click', function(event) {
+		var sectionID = $(this).attr('data-id');
+		scrollToID('#' + sectionID, 700);
+	});
 
 	// stellarJS background img move in different speed
 	$.stellar();
@@ -33,20 +38,29 @@ $(document).ready(function() {
 		}]
 	});
 
-	setTimeout(function() {
-		$('#slider-h1').removeClass('slider-h1-hide').addClass('slider-h1-show');
-	}, 2000);
-	setTimeout(function() {
-		$('#slider-h2').removeClass('slider-h2-hide').addClass('slider-h2-show');
-	}, 3000);
-	setTimeout(function() {
-		$('#slider-h3').removeClass('slider-h3-hide').addClass('slider-h3-show');
-	}, 4000);
+	// about_me photo animation
 	setInterval(changeProfilePhoto, 5000);
 
+	// skills bar fadeInOut animation
 	skillsProgressBarFade();
 });
 
+
+//slider title animation
+function slide_show() {
+	setTimeout(function() {
+		$('#slider-h1').removeClass('slider-h1-hide').addClass('slider-h1-show');
+	}, 1000);
+	setTimeout(function() {
+		$('#slider-h2').removeClass('slider-h2-hide').addClass('slider-h2-show');
+	}, 2000);
+	setTimeout(function() {
+		$('#slider-h3').removeClass('slider-h3-hide').addClass('slider-h3-show');
+	}, 3000);
+	setTimeout(function() {
+		$('.slider-title a').removeClass('slider-a-hide').addClass('slider-a-show');
+	}, 4000);
+}
 //scroll function for clicking links
 function scrollToID(id, speed) {
 	var offset = 50;
@@ -70,13 +84,13 @@ function changeProfilePhoto() {
 	}
 	setTimeout(function() {
 		$('.myPhoto img').attr('src', 'images/myphoto_' + myPhoto_count + '.jpg');
-	}, 500);
+	}, 1000);
 	scale = 0;
 	setTimeout(function() {
 		if (scale === 0) {
 			scaleToOne();
 		}
-	}, 500);
+	}, 1000);
 
 }
 

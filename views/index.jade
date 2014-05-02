@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	.container-fluid
+	.container-fluid#slider-page
 		.site-header.row
 			.carousel.slide#slider(data-ride='carousel')
 				ol.carousel-indicators
@@ -36,7 +36,11 @@ block content
 				h1.slider-h1-hide#slider-h1 YOUMENG LI
 				h2.slider-h2-hide#slider-h2 A master student of Computer Science
 				h3.slider-h3-hide#slider-h3 Welcome to my page
-	.container-fluid
+				a.slider-a-hide.btn.btn-success#resume-button(href='/view/resume') Download Resume
+					span.glyphicon.glyphicon-save
+				a.slider-a-hide.btn.btn-default#aboutme-button(href='#about_me', data-id='about_me') About me
+					span.glyphicon.glyphicon-briefcase
+	.container-fluid#home-page
 		include index/about_me
 		include index/skills
 		include index/blog
