@@ -1,14 +1,23 @@
 {
 	"title": "wuxinm's website",
 	"brand_nav": "WUXINM",
-	"home_nav": "ABOUTME",
+	"home_nav": "ABOUT ME",
 	"skills_nav": "SKILLS",
-	"blog_nav": "BOLG",
+	"blog_nav": "BLOG",
 	"photos_nav": "PHOTOS",
 	"demo_nav": "DEMOS",
 	"cn_nav": "中文",
-	"header_h2": "Focusing on Front-end Technology and Web Applications",
-	"header_h3": "Walking between visual design and web development technology",
+	"slider_h1": "YOUMENG LI",
+	"slider_h2": "Climbing the ladder must begin at the bottom",
+	"slider_h3": "Welcome to My Page",
+	"slider_download": "Download Resume",
+	"slider_about_me": "About me",
+	"slider_caption1_title": "PASSION",
+	"slider_caption1": "Through different perspectives to look at the world and you will find a better",
+	"slider_caption2_title": "CONCENTRATION",
+	"slider_caption2": "Eternity is not a distance but a decision",
+	"slider_caption3_title": "FUTURE",
+	"slider_caption3": "If you weeped for the missing sunset,you would miss all the shining stars",
 	
 	"about_me": {
 		"title": "About Me",
@@ -23,7 +32,15 @@
 		"nationality_label": "NATIONALITY",
 		"nationality": "China",
 		"location_label": "LOCATION",
-		"location": "Thunder Bay, ON, CA"
+		"location": "Thunder Bay, ON, CA",
+		"master_time": "2013.1-present",
+		"master_university": "Lakehead University",
+		"master_degree": "Master's Degree",
+		"master_location": "Thunder Bay, ON, CA",
+		"bachelor_time": "2008.9-2012.6",
+		"bachelor_university": "Zhuhai College of JiLin University",
+		"bachelor_degree": "Bachelor's Degree",
+		"bachelor_location": "Zhuhai, Guangdong, CN"
 	},
 
 	"skills": {

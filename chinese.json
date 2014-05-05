@@ -1,0 +1,85 @@
+{
+	"title": "wuxinm's website",
+	"brand_nav": "WUXINM",
+	"home_nav": "自我介绍",
+	"skills_nav": "技能",
+	"blog_nav": "随笔",
+	"photos_nav": "照片",
+	"demo_nav": "我的程序",
+	"cn_nav": "中文",
+	"slider_h1": "YOUMENG LI",
+	"slider_h2": "千里之行始于足下",
+	"slider_h3": "欢迎来到我的网站",
+	"slider_download": "下载简历",
+	"slider_about_me": "关于我",
+	"slider_caption1_title": "热情",
+	"slider_caption1": "透过不同的角度去发美好",
+	"slider_caption2_title": "专注",
+	"slider_caption2": "永远不是一种距离,而是一种决定。",
+	"slider_caption3_title": "未来",
+	"slider_caption3": "如果你还在为错过夕阳而悲伤，那你将会失去繁星带来的美好。",
+	
+	"about_me": {
+		"title": "关于我",
+		"subtitle": "个人信息",
+		"edu": "教育经历",
+		"name_label": "姓名",
+		"name": "李幼蒙",
+		"birthday_label": "生日",
+		"birthday": "1989.12.03",
+		"hobbies_label": "爱好",
+		"hobbies": "科技，体育，电影，电竞",
+		"nationality_label": "国籍",
+		"nationality": "中国",
+		"location_label": "目前地址",
+		"location": "加拿大安大略省桑德贝市",
+		"master_time": "2013.1-至今",
+		"master_university": "湖首大学",
+		"master_degree": "研究生",
+		"master_location": "加拿大安大略省桑德贝市",
+		"bachelor_time": "2008.9-2012.6",
+		"bachelor_university": "吉林大学珠海学院",
+		"bachelor_degree": "本科",
+		"bachelor_location": "中国广东省珠海市"
+	},
+
+	"skills": {
+		"title": "我的技能",
+		"subtitle": "编程与设计",
+		"intro": "个人专注于前端技术以及WEB程序的开发和设计，包括服务器客户端的WEB程序和游戏。对移动端开发也有很大的兴趣。有安卓平台的编程经验以及WP开发的了解。",
+		"progress_1": "UX design",
+		"progress_2": "HTML / CSS",
+		"progress_3": "JS / jQuery",
+		"progress_4": "NodeJS",
+		"progress_5": "C / C++",
+		"progress_6": "ActionScript",
+		"progress_7": "JAVA",
+		"progress_8": "Python"
+	},
+
+	"blogs": {
+		"title": "我的随笔",
+		"subtitle": "最近更新",
+		"footer": "更多的随笔 ..."
+	},
+
+	"photo": {
+		"title": "相册画廊",
+		"subtitle": "发现生活的美"
+	},
+
+	"demo": {
+		"title": "我的程序",
+		"subtitle": "代码源于灵感，灵感诠释生活",
+		"view": "启动应用",
+		"download": "下载代码"
+	},
+
+	"footer": {
+		"note": "说明",
+		"note_content": "本网站基于bootstrap和express框架，感谢所有开源框架的开发者。",
+		"position": "位置",
+		"sns": "社交网络",
+		"contacts": "联系方式"
+	}
+}

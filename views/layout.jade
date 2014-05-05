@@ -36,5 +36,5 @@ html
 					li: a.scroll-link(href='#blogs', data-id='blogs')= info.blog_nav
 					li: a.scroll-link(href='#photos', data-id='photos')= info.photos_nav
 					li: a.scroll-link(href='#demos', data-id='demos')= info.demo_nav
-					li(data-toggle='tooltip', data-placement='bottom', title='抱歉,暂不支持中文 ...'): a(href='#')= info.cn_nav
+					li: a(href='/cn')= info.cn_nav
 		block content

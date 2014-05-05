@@ -52,6 +52,7 @@ var Photos = mongoose.model('Photo');
 var Demos = mongoose.model('Demo');
 
 var info_en = JSON.parse(fs.readFileSync('english.json', 'utf8'));
+var info_cn = JSON.parse(fs.readFileSync('chinese.json', 'utf8'));
 
 router.get('/', function(req, res) {
     res.redirect('/en');
@@ -75,6 +76,29 @@ router.get('/en', function(req, res) {
 		}
 		res.render('index', {
 			info: info_en,
+			result: result
+		});
+	});
+});
+
+router.get('/cn', function(req, res) {
+	async.parallel({
+			blogs: function(cb) {
+				Blogs.find({}, cb);
+			},
+			photos: function(cb) {
+				Photos.find({}, cb);
+			},
+			demos: function(cb) {
+				Demos.find({}, cb);
+			}
+		}, function(err, result) {
+		if(err) {
+			res.send("500");
+			return;
+		}
+		res.render('index', {
+			info: info_cn,
 			result: result
 		});
 	});
