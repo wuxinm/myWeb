@@ -80,6 +80,7 @@ db.demos.insert({
 	"intro" : "A HTML5 web game base on KineticJS Canvas Framework. Game is very easy, try to find two cards with same pattern and get highest score.",
 	"background_img" : "/images/demos/demo_1/bg.png",
 	"path": "/view/html5game_1",
+	"download": "/view/html5game_1/download",
 	"screen_shoots": {
 		"ss_1": "/images/demos/demo_1/ss_1.png",
 		"ss_2": "/images/demos/demo_1/ss_2.png",
@@ -92,6 +93,7 @@ db.demos.insert({
 	"intro": "A HTML5 3D puzzle game based on three.js. Before you start this game, you need to put a video file which called 'video.mp4' in this folder",
 	"background_img": "/images/demos/demo_2/bg.jpg",
 	"path": "/view/html5game_2",
+	"download": "/view/html5game_2/download",
 	"screen_shoots": {
 		"ss_1": "/images/demos/demo_2/ss_1.png",
 		"ss_2": "/images/demos/demo_2/ss_2.png",

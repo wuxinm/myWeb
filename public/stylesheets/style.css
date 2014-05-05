@@ -8,7 +8,7 @@ body {
 	padding-top: 50px;
 }
 
-.anchor {
+section {
     padding-top: 50px;
 }
 
@@ -146,6 +146,7 @@ body {
 	/*position: relative;
 	top: -350px;*/
 }
+
 /* 
 	SECTION HEADER
  */
@@ -264,6 +265,9 @@ body {
 /* 
 	Skills
  */
+#skills {
+	padding-bottom: 20px;
+}
 
 .skills {
 	background: url("../images/skills_bg.jpg") repeat-y transparent fixed -50px;
@@ -286,15 +290,12 @@ body {
 }
 
 .skills .ex_block {
-	height: 140px;
+	/*height: 140px;*/
+	overflow: hidden;
 }
 
 .ex_block .progress {
 	margin: 0 40px 20px 40px;
-}
-
-.ex_block .group1 {
-	display: none;
 }
 
 .ex_block .group2 {

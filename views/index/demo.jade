@@ -1,4 +1,4 @@
-section.row.demo.anchor#demos
+section.row.demo#demos
 	.section-header.col-xs-12
 		h1= info.demo.title
 		h2= info.demo.subtitle
@@ -11,5 +11,4 @@ section.row.demo.anchor#demos
 					h1 #{demo.title}
 					p #{demo.intro}
 					a.btn.btn-warning(href='#{demo.path}')= info.demo.view
-					a.btn.btn-warning()= info.demo.sc
-					a.btn.btn-warning()= info.demo.download
+					a.btn.btn-warning(href='#{demo.download}')= info.demo.download

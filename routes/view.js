@@ -18,12 +18,22 @@ router.get('/html5game_1', function(req, res) {
 	});
 });
 
+router.get('/html5game_1/download', function(req, res) {
+	var tempFile = 'public/documents/html5game_1.zip';
+	res.download(tempFile, 'HTML5 Matching Game');
+});
+
 router.get('/html5game_2', function(req, res) {
 	var tempFile = 'public/documents/html5game_2/index.html';
 	fs.readFile(tempFile, 'utf8', function(err, data) {
 		res.type('html');
 		res.send(data);
 	});
+});
+
+router.get('/html5game_2/download', function(req, res) {
+	var tempFile = 'public/documents/html5game_2.zip';
+	res.download(tempFile, 'HTML5 3D Puzzle Game');
 });
 
 module.exports = router;

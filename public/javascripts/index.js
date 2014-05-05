@@ -42,7 +42,7 @@ $(window).load(function() {
 	setInterval(changeProfilePhoto, 5000);
 
 	// skills bar fadeInOut animation
-	skillsProgressBarFade();
+	setTimeout(skillsProgressBarFade(), 1000);
 });
 
 
@@ -110,7 +110,6 @@ function scaleToOne() {
 
 function skillsProgressBarFade() {
 	var count = 1;
-	$('.ex_block .group' + count).fadeIn(1000);
 
 	setInterval(function() {
 		$('.ex_block .group' + count).fadeOut(1000);
