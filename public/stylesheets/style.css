@@ -141,12 +141,6 @@ section {
 	transition: all 1s ease ;
 }
 
-#home-page {
-	margin-top: -350px !important;
-	/*position: relative;
-	top: -350px;*/
-}
-
 /* 
 	SECTION HEADER
  */
@@ -199,7 +193,10 @@ section {
 /* 
 	SECTION ABOUT_ME
  */
-.about_me {
+#home-page {
+	margin-top: -350px !important;
+	/*position: relative;
+	top: -350px;*/
 }
 
 .about_me .section-header span {
@@ -592,6 +589,9 @@ section {
 }
 
 @media only screen and (max-width: 1000px) {
+	#home-page {
+		margin-top: -320px !important;
+	}
 	.slider-title {
 		top: -430px;
 	}
@@ -614,6 +614,9 @@ section {
 }
 
 @media only screen and (max-width: 900px) {
+	#home-page {
+		margin-top: 0px !important;
+	}
 	.slider-title {
 		top: -380px;
 	}
