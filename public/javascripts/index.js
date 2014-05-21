@@ -61,6 +61,7 @@ function slide_show() {
 		$('.slider-title a').removeClass('slider-a-hide').addClass('slider-a-show');
 	}, 4000);
 }
+
 //scroll function for clicking links
 function scrollToID(id, speed) {
 	var offset = 50;
